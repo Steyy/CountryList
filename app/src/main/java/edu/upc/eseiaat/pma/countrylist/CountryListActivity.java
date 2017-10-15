@@ -50,7 +50,7 @@ public class CountryListActivity extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(CountryListActivity.this);
                 builder.setTitle(R.string.confirmation);
                 String msg = getResources().getString(R.string.confirm_message);
-                builder.setMessage(msg + " " country_list.get(position) + "?");
+                builder.setMessage(msg + " " + country_list.get(position) + "?");
                 builder.setPositiveButton(R.string.erase, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
